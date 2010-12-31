@@ -1,0 +1,88 @@
+set autoindent
+set number
+set ruler
+set noswf
+set nowrap
+
+set nocompatible  " We don't want vi compatibility.
+filetype plugin indent on
+syntax on
+let clj_highlight_builtins = 1
+ 
+colorscheme molokai
+
+set expandtab
+set ts=2  " Tabs are 2 spaces
+set bs=2  " Backspace over everything in insert mode
+set shiftwidth=2  " Tabs under smart indent
+set virtualedit=all
+set incsearch
+
+set cursorline " highlight current line
+
+let mapleader = "\\"
+
+map <Leader>m :Rmodel 
+map <Leader>c :Rcontroller 
+map <Leader>v :Rview 
+map <Leader>u :Runittest 
+map <Leader>f :Rfunctionaltest 
+map <Leader>i :Rintegrationtest 
+map <Leader>h :Rhelper
+map <Leader>tm :RTmodel 
+map <Leader>tc :RTcontroller 
+map <Leader>tv :RTview 
+map <Leader>tu :RTunittest 
+map <Leader>tf :RTfunctionaltest 
+map <Leader>sm :RSmodel 
+map <Leader>sc :RScontroller 
+map <Leader>sv :RSview 
+map <Leader>su :RSunittest 
+map <Leader>sf :RSfunctionaltest 
+map <Leader>si :RSintegrationtest
+
+map <Leader>a  :e public/stylesheets/_
+map <Leader>q  :e public/stylesheets/screen.scss
+
+"I hit :W way to often
+map :W :w
+map :E :e
+map :Q :q
+
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-h> <C-w>h
+map <C-l> <C-w>l
+
+
+"fuck manpage lookups
+noremap K <NOP>
+
+"faster than esc
+inoremap kj <Esc>
+
+"insert line above/below
+noremap <S-CR> mlO<Esc>`l
+noremap <CR> mlo<Esc>`l
+"indent/unindent
+noremap <space> >>
+noremap <S-Space> <<
+
+ab recipeint recipient
+ab veiw view
+ab recieve receive
+ab sned send
+ab recieved received   
+
+" Need to learn not to use the mouse
+set mouse=                      " disable mouse support in all modes
+set mousehide                   " hide the mouse when typing text
+
+autocmd BufWriteCmd *.html.erb,*.scss,*.rb :call Refresh_firefox()
+function! Refresh_firefox()
+  write
+  if &modified 
+    silent echo "ruby ~/.vim/scripts/refresh_browser.rb"
+  endif
+endfunction
+
