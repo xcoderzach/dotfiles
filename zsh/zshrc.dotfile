@@ -1,0 +1,14 @@
+#the ideas for this setup from here
+#https://github.com/holman/dotfiles/
+#
+
+export ZSH=$HOME/dotfiles
+
+#source anything with .zsh extension in dotfiles folder
+for config_file ($ZSH/**/*.zsh) source $config_file
+
+export PROJECTS=~/Development
+
+Initialize autocomplete
+autoload -U compinit
+compinit
