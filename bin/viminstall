@@ -1,0 +1,4 @@
+#!/bin/sh
+
+VIM_FILE=$1
+unzip $VIM_FILE -d .vim

@@ -1,13 +1,13 @@
+set nocompatible  " We don't want vi compatibility.
+
 set autoindent
 set number
 set ruler
 set noswf
 set nowrap
 
-set nocompatible  " We don't want vi compatibility.
 filetype plugin indent on
 syntax on
-let clj_highlight_builtins = 1
  
 colorscheme molokai
 
@@ -41,8 +41,7 @@ map <Leader>su :RSunittest
 map <Leader>sf :RSfunctionaltest 
 map <Leader>si :RSintegrationtest
 
-map <Leader>a  :e public/stylesheets/_
-map <Leader>q  :e public/stylesheets/screen.scss
+map <Leader>a  :e app/stylesheets/partials/_
 
 "I hit :W way to often
 map :W :w
@@ -56,7 +55,7 @@ map <C-l> <C-w>l
 
 
 "fuck manpage lookups
-noremap K <NOP>
+vnoremap K :
 
 "faster than esc
 inoremap kj <Esc>
@@ -85,4 +84,5 @@ function! Refresh_firefox()
     silent echo "ruby ~/.vim/scripts/refresh_browser.rb"
   endif
 endfunction
+
 
