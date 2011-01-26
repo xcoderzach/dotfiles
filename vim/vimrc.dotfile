@@ -53,9 +53,8 @@ map <C-k> <C-w>k
 map <C-h> <C-w>h
 map <C-l> <C-w>l
 
-
 "fuck manpage lookups
-vnoremap K :
+vnoremap K <Nop>
 
 "faster than esc
 inoremap kj <Esc>
@@ -84,5 +83,3 @@ function! Refresh_firefox()
     silent echo "ruby ~/.vim/scripts/refresh_browser.rb"
   endif
 endfunction
-
-
