@@ -5,6 +5,7 @@ set number
 set ruler
 set noswf
 set nowrap
+set vb t_vb=
 
 filetype plugin indent on
 syntax on
@@ -22,6 +23,7 @@ set cursorline " highlight current line
 
 let mapleader = "\\"
 
+map <Leader>] :NERDTreeToggle<cr>
 map <Leader>m :Rmodel 
 map <Leader>c :Rcontroller 
 map <Leader>v :Rview 
