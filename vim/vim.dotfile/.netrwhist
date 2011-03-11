@@ -1,11 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/zach/dotfiles/zsh'
-let g:netrw_dirhist_2='/Users/zach/Development/webSocks'
-let g:netrw_dirhist_3='/Users/zach/Development/mukari'
-let g:netrw_dirhist_4='/Users/zach/Development/mukari/app'
-let g:netrw_dirhist_5='/Users/zach/Development/mukari/app/stylesheets'
-let g:netrw_dirhist_6='/Users/zach/Development/mukari/app/stylesheets/partials'
-let g:netrw_dirhist_7='/Users/zach/Development/mukari/app/models'
-let g:netrw_dirhist_8='/Users/zach/Development/webSocks'
-let g:netrw_dirhist_9='/Users/zach/Development/pubsub/server-src'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/Users/zach/Development/cradle/lib/cradle'

@@ -6,6 +6,7 @@ set ruler
 set noswf
 set nowrap
 set vb t_vb=
+set lisp "dashed words are words!
 
 filetype plugin indent on
 syntax on
