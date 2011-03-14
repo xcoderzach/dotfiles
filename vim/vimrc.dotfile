@@ -12,6 +12,7 @@ filetype plugin indent on
 syntax on
  
 colorscheme molokai
+"set guifont=Droid\ Sans\ Mono
 
 set expandtab
 set ts=2  " Tabs are 2 spaces
