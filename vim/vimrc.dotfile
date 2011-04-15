@@ -45,7 +45,7 @@ map <Leader>su :RSunittest
 map <Leader>sf :RSfunctionaltest 
 map <Leader>si :RSintegrationtest
 
-map <Leader>a  :e app/stylesheets/partials/_
+map <Leader>a :A<cr>
 
 "I hit :W way to often
 map :W :w
