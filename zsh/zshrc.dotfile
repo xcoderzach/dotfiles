@@ -9,10 +9,12 @@ export PATH=".:bin:/usr/local/bin:/usr/local/sbin:$DOTFILES/bin:/usr/local/share
 export EDITOR=vim 
 
 # Set to the name theme to load.
-plugins=(git osx ruby vi-mode brew github lol rails3 gem npm bundler)
+plugins=(git osx ruby vi-mode brew github lol rails3 gem npm bundler git-flow)
 
 source $ZSH/oh-my-zsh.sh
 
 #Initialize autocomplete
 autoload -U compinit
 compinit
+
+[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
