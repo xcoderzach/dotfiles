@@ -1,6 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/zach/Development/cradle/lib/cradle'
-let g:netrw_dirhist_2='/Users/zach/Development/mukari/app'
-let g:netrw_dirhist_3='/Users/zach/Development/surveyRails/public/javascripts'
-let g:netrw_dirhist_4='/misc/home/smit4608/Development/surveyDB/zachbillybriandrake'
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/misc/home/smit4608/.rvm/gems/ruby-1.9.2-p180@rails3/gems/clearance-0.12.0'
+let g:netrw_dirhist_2='/misc/home/smit4608/Development/mukari'
+let g:netrw_dirhist_3='/misc/home/smit4608/Development/mukariMVP/node_modules'
+let g:netrw_dirhist_4='/misc/home/smit4608/Development/mukariMVP/public/js/libs'
+let g:netrw_dirhist_5='/misc/home/smit4608/Development/mukariMVP/config'
+let g:netrw_dirhist_6='/misc/home/smit4608/Development/mukariMVP/lib/client/LiveController/src'
+let g:netrw_dirhist_7='/misc/home/smit4608/Development/mukariMVP/node_modules/connect-mongo'
+let g:netrw_dirhist_8='/misc/home/smit4608/Development/mukariMVP/lib/FreshDocs/test'
+let g:netrw_dirhist_9='/misc/home/smit4608/Development/mukariMVP/lib/MongoObserver/src'

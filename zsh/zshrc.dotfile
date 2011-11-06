@@ -6,20 +6,13 @@ export ZSH_THEME="zach-prompt"
 export DOTFILES=$HOME/dotfiles
 export PROJECTS=$HOME/Development
 export NODE_PATH=/usr/local/lib/node
-export PATH=".:bin:/usr/local/bin:/usr/local/sbin:$DOTFILES/bin:/usr/local/share/npm/bin:$PATH"
+export PATH=".:bin:/usr/local/bin:/usr/local/sbin:$DOTFILES/bin:/usr/local/share/npm/bin:$HOME/local/bin:$HOME/local/mongo/bin:$HOME/local/cuda/bin:$HOME/bin:$PATH"
 export EDITOR=vim 
 
+
 # Set to the name theme to load.
-plugins=(git osx ruby vi-mode brew github lol rails3 gem npm bundler git-flow)
+plugins=(git osx ruby vi-mode brew lol rails3 gem npm bundler git-flow)
 
 source $ZSH/oh-my-zsh.sh
-
-# startup virtualenv-burrito
-. $HOME/.venvburrito/startup.sh
-
-#Initialize autocomplete
-autoload -U compinit
-compinit
-export NODE_PATH=/usr/local/lib/node
 
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm

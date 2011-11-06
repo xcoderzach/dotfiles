@@ -5,6 +5,7 @@ set number
 set ruler
 set noswf
 set nowrap
+set novisualbell
 set vb t_vb=
 set lisp "dashed words are words!
 
@@ -57,6 +58,8 @@ map <C-k> <C-w>k
 map <C-h> <C-w>h
 map <C-l> <C-w>l
 
+vnoremap <esc> :noh<return><esc>
+
 "fuck manpage lookups
 vnoremap K <Nop>
 
@@ -79,11 +82,3 @@ ab recieved received
 " Need to learn not to use the mouse
 set mouse=                      " disable mouse support in all modes
 set mousehide                   " hide the mouse when typing text
-
-autocmd BufWriteCmd *.html.erb,*.scss,*.rb :call Refresh_firefox()
-function! Refresh_firefox()
-  write
-  if &modified 
-    silent echo "ruby ~/.vim/scripts/refresh_browser.rb"
-  endif
-endfunction
